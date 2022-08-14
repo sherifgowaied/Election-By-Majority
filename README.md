@@ -5,14 +5,13 @@
 # Getting Started
 
 
-Execute cd ~ (or simply cd with no arguments) to ensure that you’re in your home directory).
-Execute mkdir pset3 to make (i.e., create) a directory called pset3.
-Execute cd pset3 to change into (i.e., open) that directory.
-Execute mkdir plurality to make (i.e., create) a directory called plurality in your pset3 directory.
-Execute cd plurality to change into (i.e., open) that directory.
-Execute wget https://cdn.cs50.net/2020/fall/psets/3/plurality/plurality.c to download this problem’s distribution code.
-Execute ls. You should see this problem’s distribution code, in a file called plurality.c.
-Understanding
+Execute cd ~ (or simply cd with no arguments) to ensure that you’re in your home directory). <br />
+Execute mkdir pset3 to make (i.e., create) a directory called pset3. <br />
+Execute cd pset3 to change into (i.e., open) that directory. <br />
+Execute mkdir plurality to make (i.e., create) a directory called plurality in your pset3 directory. <br />
+Execute cd plurality to change into (i.e., open) that directory. <br />
+Execute ls. You should see this problem’s distribution code, in a file called plurality.c. <br />
+Understanding <br />
 Let’s now take a look at plurality.c and read through the distribution code that’s been provided to you.
 
 The line #define MAX 9 is some syntax used here to mean that MAX is a constant (equal to 9) that can be used throughout the program. Here, it represents the maximum number of candidates an election can have.
@@ -27,37 +26,37 @@ If you look further down in the file, though, you’ll notice that the vote and 
 Complete the implementation of plurality.c in such a way that the program simulates a plurality vote election.
 
 Complete the vote function.
-vote takes a single argument, a string called name, representing the name of the candidate who was voted for.
-If name matches one of the names of the candidates in the election, then update that candidate’s vote total to account for the new vote. The vote function in this case should return true to indicate a successful ballot.
-If name does not match the name of any of the candidates in the election, no vote totals should change, and the vote function should return false to indicate an invalid ballot.
-You may assume that no two candidates will have the same name.
-Complete the print_winner function.
+vote takes a single argument, a string called name, representing the name of the candidate who was voted for. <br />
+If name matches one of the names of the candidates in the election, then update that candidate’s vote total to account for the new vote. The vote function <br /> in this case should return true to indicate a successful ballot.
+If name does not match the name of any of the candidates in the election, no vote totals should change, and the vote function should return false to indicate an invalid ballot. <br />
+You may assume that no two candidates will have the same name. <br />
+Complete the print_winner function. <br />
 The function should print out the name of the candidate who received the most votes in the election, and then print a newline.
-It is possible that the election could end in a tie if multiple candidates each have the maximum number of votes. In that case, you should output the names of each of the winning candidates, each on a separate line.
-You should not modify anything else in plurality.c other than the implementations of the vote and print_winner functions (and the inclusion of additional header files, if you’d like).
+It is possible that the election could end in a tie if multiple candidates each have the maximum number of votes. In that case, you should output the names of each of the winning candidates, each on a separate line. <br />
+You should not modify anything else in plurality.c other than the implementations of the vote and print_winner functions (and the inclusion of additional header files, if you’d like). <br />
 
 # Usage
 Your program should behave per the examples below.
 
-$ ./plurality Alice Bob
-Number of voters: 3
-Vote: Alice
-Vote: Bob
-Vote: Alice
-Alice
-$ ./plurality Alice Bob
-Number of voters: 3
-Vote: Alice
-Vote: Charlie
-Invalid vote.
-Vote: Alice
-Alice
-$ ./plurality Alice Bob Charlie
-Number of voters: 5
-Vote: Alice
-Vote: Charlie
-Vote: Bob
-Vote: Bob
-Vote: Alice
-Alice
-Bob
+$ ./plurality Alice Bob <br />
+Number of voters: 3 <br />
+Vote: Alice <br />
+Vote: Bob <br />
+Vote: Alice <br />
+Alice <br />
+$ ./plurality Alice Bob <br />
+Number of voters: 3 <br />
+Vote: Alice <br />
+Vote: Charlie <br />
+Invalid vote. <br />
+Vote: Alice <br />
+Alice <br />
+$ ./plurality Alice Bob Charlie <br />
+Number of voters: 5 <br />
+Vote: Alice <br />
+Vote: Charlie <br />
+Vote: Bob <br />
+Vote: Bob <br />
+Vote: Alice <br />
+Alice <br />
+Bob <br />
